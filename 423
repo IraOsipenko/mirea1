@@ -1,0 +1,32 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+int eng (const char sym)
+{
+  return( (sym == 'A') || (sym == 'a') || (sym == 'E') || (sym == 'e') || 
+          (sym == 'I') || (sym == 'i') || (sym == 'O') || (sym == 'o') ||
+          (sym == 'U') || (sym == 'u') || (sym == 'Y') || (sym == 'y'));
+}
+
+int main ()
+{
+    char s;
+    scanf("%c", &s);
+    if (!eng (s) )
+    {
+       printf("Not letter");
+       return 0;
+    } 
+    if ( vowel(s) )
+    {
+       printf ( vowel(s) )
+       return 0;
+    } else
+    {
+       printf("consonant");
+       return 0;
+    }
+    return(0);
+}    
