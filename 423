@@ -5,6 +5,11 @@
 
 int eng (const char sym)
 {
+    return ( (sym >= 'A') && (sym <= 'Z') || (sym >= 'a') && (sym <= 'z'));
+}
+
+int vowel (const char sym)
+{
   return( (sym == 'A') || (sym == 'a') || (sym == 'E') || (sym == 'e') || 
           (sym == 'I') || (sym == 'i') || (sym == 'O') || (sym == 'o') ||
           (sym == 'U') || (sym == 'u') || (sym == 'Y') || (sym == 'y'));
@@ -21,7 +26,7 @@ int main ()
     } 
     if ( vowel(s) )
     {
-       printf ( vowel(s) )
+       printf ( vowel(s) );
        return 0;
     } else
     {
@@ -29,4 +34,4 @@ int main ()
        return 0;
     }
     return(0);
-}    
+}  
